@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 612px;
+    width: 612px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.celula{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: .3s;
+}
+.celula:hover{
+    background-color: rgb(25, 25, 25);
+}
+.celula:nth-child(1), .celula:nth-child(2), .celula:nth-child(4), .celula:nth-child(5), .celula:nth-child(7), .celula:nth-child(8){
+    border-right: 2px solid whitesmoke;
+}
+.celula:nth-child(1), .celula:nth-child(2), .celula:nth-child(3), .celula:nth-child(4), .celula:nth-child(5), .celula:nth-child(6){
+    border-bottom: 2px solid whitesmoke;
+}
+.x{
+    background-image: url("./imagens/x.png");
+    background-size: contain;
+}
+.o{
+    background-image: url("./imagens/0.png");
+    background-size: contain;
+}
